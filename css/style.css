@@ -1,21 +1,20 @@
 /* General Page Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fce4ec;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Header and Footer Styling */
 header, footer {
-    background-color: #f8bbd0;
+    background-color: #4a90e2;
     color: white;
     text-align: center;
     padding: 20px;
-    width: 100%;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -27,9 +26,8 @@ footer a {
 /* Sidebar Navigation */
 .sidebar {
     width: 25%;
-    background-color: #f48fb1;
+    background-color: #3178c6;
     padding: 15px;
-    border-radius: 10px;
     height: fit-content;
 }
 
@@ -39,56 +37,60 @@ footer a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    border-radius: 5px;
     margin-bottom: 10px;
-    background-color: #f06292;
+    background-color: #255a9b;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .sidebar a:hover {
-    background-color: #ec407a;
+    background-color: #1b4275;
 }
 
 /* Main Content Area */
 .container {
     display: flex;
     max-width: 900px;
-    width: 100%;
-    margin-top: 20px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 .content {
     flex: 1;
     padding: 20px;
-    background-color: #fff;
+    background-color: #f8f8f8;
     border-radius: 10px;
-    margin-left: 20px;
 }
 
-/* Typography and Readability Enhancements */
+/* Typography */
 h1, h2, h3 {
-    color: #d81b60;
+    color: #2c3e50;
 }
 
 p, li {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 18px;
 }
 
-/* Link Styling with Pseudo-classes */
+/* Link Styling */
 a {
-    color: #d81b60;
+    color: #1e3799;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #c2185b;
+    color: #0c2461;
 }
 
-/* Additional Class for Highlights */
-.highlight {
-    background-color: #ffebee;
-    padding: 5px;
-    border-radius: 5px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
 }
